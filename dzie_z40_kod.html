@@ -1,0 +1,29 @@
+<textarea rows="20" cols="100">
+<!DOCTYPE html>  
+<html lang="pl-PL">  
+<head>
+    <meta charset="UTF-8">
+    <title>Z40 Dziewulski</title>
+</head>
+<body> 
+ <div style="color:red;font-size:50px;"> 
+    <script language="JavaScript"> 
+  var x=prompt("podaj argument x=",""); 
+               var x_dzi=parseFloat(x); 
+    document.write("czytany argument x="+x_dzi+"<br>");     
+
+                 function f_dzi(x_dzi) { 
+                            if(x_dzi>=2) {return 9;} 
+                            if((x_dzi>-2)&&(x_dzi<0)) {return (x_dzi+1)*x_dzi;} 
+                            if((x_dzi>=0)&&(x_dzi<2)) {return x_dzi*x_dzi*x_dzi + 1;} 
+                            if(x_dzi<-2) {return 1;} 
+                  } 
+ 
+               document.write("f="+f_dzi(x_dzi)+"<br>"); 
+ 
+           </script> 
+ </div> 
+ </body> 
+</html> 
+<!--  Dziewulski Z40_JS  --> 
+</textarea>
