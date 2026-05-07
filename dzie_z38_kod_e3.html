@@ -1,0 +1,35 @@
+<textarea rows="25" cols="100">
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Dziewulski Z38_E3</title>
+</head>
+<body>
+    <div style="color: red; font-size: 1cm;">Dziewulski - Zadanie 38 - Przykład 3</div><br>
+    <div style="color: green; font-size: 7mm;">
+        Sprawdzenie czy rozdzielczość ekranu nie jest mniejsza niż <b>800x600</b>
+        (z użyciem instrukcji warunkowej <b>if</b> i operatora logicznego <b>||</b>):
+    </div><br>
+    <hr>
+    <script>
+        if (screen.width < 800 || screen.height < 600) {
+            document.write("<div style='color:red;font-size:36px;'>");
+            document.write("Rozdzielczość ekranu powinna być większa niż 800x600.<br>");
+            document.write("Twoja: " + screen.width + " x " + screen.height);
+            document.write("</div>");
+        } else {
+            document.write("<div style='color:green;font-size:36px;'>");
+            document.write("Rozdzielczość ekranu jest OK: ");
+            document.write(screen.width + " x " + screen.height);
+            document.write("</div>");
+        }
+    </script>
+    <hr>
+    <div style="color: navy; font-size: 6mm;">
+        Zastosowano warunek: <code>screen.width &lt; 800 || screen.height &lt; 600</code>
+    </div>
+</body>
+</html>
+<!-- Dziewulski Z38_E3_KOD -->
+</textarea>

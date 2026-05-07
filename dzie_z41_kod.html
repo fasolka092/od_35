@@ -1,0 +1,94 @@
+<textarea rows="50" cols="120">
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <title>Dziewulski Z41_JS</title>
+    <meta charset="utf-8">
+    <style>
+    h1 {
+         text-transform: uppercase; }
+    </style>
+</head>
+<body>
+    <h1>Proste działania</h1><br>
+    <h2>Dziewulski klasa 3G</h2>
+    <label for="a">Podaj pierwszą liczbę:</label> <input type="number" id="a"><br><br>
+    <label for="b">Podaj drugą liczbę:</label> <input type="number" id="b"><br><br>
+    <input type="button" value="DODAWANIE" onclick="suma_dzi()">
+    <input type="button" value="ODEJMOWANIE" onclick="roznica_dzi()">
+    <input type="button" value="MNOŻENIE" onclick="iloczyn_dzi()">
+    <input type="button" value="DZIELENIE" onclick="iloraz_dzi()">
+    <input type="button" value="TEORIA-Dziewulski" onclick="TEORIA_dzi()">
+    <div id="wynik" style="margin-top:20px;"></div>
+    <script>
+        function suma_dzi(){
+            var a = document.getElementById("a").value;
+            var b = document.getElementById("b").value;
+            if (a == "" || b == ""){
+                document.getElementById("wynik").innerHTML = "Proszę uzupełnić obie liczby.";
+            }
+            else {
+                a = parseFloat(a);
+                b = parseFloat(b);
+                var suma = a + b;
+                document.getElementById("wynik").innerHTML = "Wynik działania wynosi: " + suma.toFixed(2);
+            }
+        }
+        function roznica_dzi(){
+            var a = document.getElementById("a").value;
+            var b = document.getElementById("b").value;
+            if (a == "" || b == "") {
+                document.getElementById("wynik").innerHTML = "Proszę uzupełnić obie liczby.";
+            }
+            else {
+                a = parseFloat(a);
+                b = parseFloat(b);
+                var roznica = a - b;
+                document.getElementById("wynik").innerHTML = "Wynik działania wynosi: " + roznica.toFixed(2);
+            }
+        }
+        function iloczyn_dzi(){
+            var a = document.getElementById("a").value;
+            var b = document.getElementById("b").value;
+            if (a == "" || b == ""){
+                document.getElementById("wynik").innerHTML = "Proszę uzupełnić obie liczby.";
+            }
+            else {
+                a = parseFloat(a);
+                b = parseFloat(b);
+                var iloczyn = a * b;
+                document.getElementById("wynik").innerHTML = "Wynik działania wynosi: " + iloczyn.toFixed(2);
+            }
+        }
+        function iloraz_dzi() {
+            var a = document.getElementById("a").value;
+            var b = document.getElementById("b").value;
+            if (a == "" || b == "") {
+                document.getElementById("wynik").innerHTML = "Proszę uzupełnić obie liczby.";
+            }
+            else {
+                a = parseFloat(a);
+                b = parseFloat(b);
+                if (b == 0) {
+                    document.getElementById("wynik").innerHTML = "Nie wolno dzielić przez zero.";
+                }
+                else {
+                    var iloraz = a / b;
+                    document.getElementById("wynik").innerHTML = "Wynik działania wynosi: " + iloraz.toFixed(2);
+                }
+            }
+        }
+
+        function TEORIA_dzi() {
+            // Pierwsza linia teorii: <label for="a">Podaj pierwszą liczbę:</label> <input type="number" id="a">
+            // Druga linia teorii: <input type="button" value="DODAWANIE" onclick="suma()">
+            // Trzecia linia teorii: var a = document.getElementById("a").value;
+            // Czwarta linia teorii: if (a == "" || b == "")
+            // Piąta linia teorii: document.getElementById("wynik").innerHTML = "Wynik działania wynosi: " + suma;
+            // (pełny kod TEORIA_dzi w pliku dzie_z41.html - tutaj skrócone dla czytelności)
+        }
+    </script>
+</body>
+</html>
+<!-- Dziewulski Z41_KOD -->
+</textarea>

@@ -1,0 +1,38 @@
+<textarea rows="25" cols="100">
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Dziewulski Z38_E4</title>
+</head>
+<body>
+    <div style="color: red; font-size: 1cm;">Dziewulski - Zadanie 38 - Przykład 4</div><br>
+    <div style="color: green; font-size: 7mm;">
+        Wykrywanie aktualnego rozmiaru okna przeglądarki przy użyciu
+        <b>window.innerWidth</b> i <b>window.innerHeight</b>
+        (NIE uwzględniając pasków narzędzi/pasków przewijania):
+    </div><br>
+    <hr>
+    <style>
+        #demo_dzi {
+            color: red;
+            font-size: 40px;
+        }
+    </style>
+    <p id="demo_dzi"></p>
+    <script>
+        var w = window.innerWidth;
+        var h = window.innerHeight;
+        var x = document.getElementById("demo_dzi");
+        x.innerHTML = "szerokość przeglądarki: " + w + ", wysokość: " + h + ".";
+    </script>
+    <hr>
+    <div style="color: navy; font-size: 6mm;">
+        window.innerWidth &rarr; szerokość okna przeglądarki<br>
+        window.innerHeight &rarr; wysokość okna przeglądarki<br>
+        Zmień rozmiar okna i odśwież stronę żeby zobaczyć inne wartości.
+    </div>
+</body>
+</html>
+<!-- Dziewulski Z38_E4_KOD -->
+</textarea>
